@@ -1,0 +1,11 @@
+{
+  "title":{
+    "message":"This value should not be blank."
+  },
+  "description":{
+    "message":"This value should not be blank."
+  },
+  "author":{
+    "message":"This value should not be blank."
+  }
+}
