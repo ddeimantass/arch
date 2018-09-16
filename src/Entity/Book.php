@@ -25,11 +25,16 @@ class Book
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\Type(
+     *     type="numeric",
+     *     message="The value {{ value }} is not a valid {{ type }}."
+     * )
+     * @Assert\NotBlank()
      */
     private $year;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="string", length=255)
      * @Assert\NotBlank()
      */
     private $description;

@@ -1,0 +1,10 @@
+div.hide {
+    display: none;
+}
+body > div{
+    padding: 25px;
+}
+
+.error{
+    padding-top: 10px;
+}

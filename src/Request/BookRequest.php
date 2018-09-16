@@ -15,6 +15,11 @@ class BookRequest
     
     /**
      * @var int
+     * @Assert\Type(
+     *     type="numeric",
+     *     message="The value {{ value }} is not a valid {{ type }}."
+     * )
+     * @Assert\NotBlank()
      */
     private $year;
     
@@ -40,7 +45,6 @@ class BookRequest
         $this->description = $request->get('description');
         $this->author = $request->get('author');
     }
-    
     
     /**
      * @return string

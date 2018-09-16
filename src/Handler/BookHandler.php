@@ -70,7 +70,6 @@ class BookHandler
             foreach ($violations as $violation) {
                 $errors[$violation->getPropertyPath()] = [
                     'message' => $violation->getMessage(),
-                    'invalid_value' => $violation->getInvalidValue(),
                 ];
             }
             $data = $this->serializer->serialize($errors,'json');
@@ -107,7 +106,6 @@ class BookHandler
             foreach ($violations as $violation) {
                 $errors[$violation->getPropertyPath()] = [
                     'message' => $violation->getMessage(),
-                    'invalid_value' => $violation->getInvalidValue(),
                 ];
             }
             $data = $this->serializer->serialize($errors,'json');

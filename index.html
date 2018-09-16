@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>Book archive</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+<body>
+    <div id="list" class="panel">
+        <h2 class="h2 panel-heading">Books list</h2>
+        <p><a class="create btn btn-success" href="#">Add book</a></p>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>Description</th>
+                    <th>Author</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div id="show" class="hide">
+        <h2>Book</h2>
+        <a class="main btn btn-info" href="#" >main page</a>
+        <p class="content" ></p>
+    </div>
+    <div id="edit" class="hide">
+        <h2>Book</h2>
+        <a class="main btn btn-info" href="#" >main page</a>
+        <p class="error" ></p>
+        <p class="content" ></p>
+        <button href="#" class="submit btn btn-success">Submit</button>
+    </div>
+    <div id="create" class="hide">
+        <h2>Book</h2>
+        <a class="main btn btn-info" href="#" >main page</a>
+        <p class="error" ></p>
+        <form class="content" >
+            <p class='form-group row'>
+                <label class='col-sm-1 col-form-label' >Title: </label>
+                <input class='col-sm-3 form-control' name='title' value=''>
+            </p>
+            <p class='form-group row'>
+                <label class='col-sm-1 col-form-label' >Year: </label>
+                <input class='col-sm-3 form-control' name='year' value=''>
+            </p>
+            <p class='form-group row'>
+                <label class='col-sm-1 col-form-label' >Description: </label>
+                <input class='col-sm-3 form-control' name='description' value=''>
+            </p>
+            <p class='form-group row'>
+                <label class='col-sm-1 col-form-label' >Author: </label>
+                <input class='col-sm-3 form-control' name='author' value=''>
+            </p>
+        </form>
+        <button href="#" class="submit btn btn-success">Submit</button>
+    </div>
+</body>
+</html>
+
